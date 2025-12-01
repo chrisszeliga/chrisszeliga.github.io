@@ -1,3 +1,11 @@
+* {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* fancy italics */
 @font-face {
   font-family: "GreatVibes-Regularbes";
