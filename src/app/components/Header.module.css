@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 20px;
   background-color: rgb(17, 17, 17);
+  color: white;
   font-family: Inter;
   font-size: clamp(11px, 1.7vw, 13px);
   text-transform: uppercase;

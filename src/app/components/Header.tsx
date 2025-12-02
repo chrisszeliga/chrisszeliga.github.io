@@ -2,9 +2,9 @@ import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <div className={styles['header']}>
+    <header className={styles.header}>
       <p>Christopher Szeliga</p>
-      <div className={styles['nav']}>
+      <nav className={styles.nav}>
         <a target='_blank' rel="noopener noreferrer" href='https://github.com/chrisszeliga'>
           Github
         </a>
@@ -14,7 +14,7 @@ export default function Header() {
         <a target='_blank' rel="noopener noreferrer" href='mailto:szeligachristopher@gmail.com'>
           Contact
         </a>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }

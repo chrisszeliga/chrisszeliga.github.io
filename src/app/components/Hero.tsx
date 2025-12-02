@@ -2,7 +2,7 @@ import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.body}>
         <p><span>C</span>hristopher <span>S</span>zeliga</p>
         <p>Software Engineer</p>
@@ -12,8 +12,6 @@ export default function Hero() {
         <p>big image</p>
         <p>big image</p>
       </div>
-    </div>
+    </section>
   )
 }
-
-// className={styles.pixel}
