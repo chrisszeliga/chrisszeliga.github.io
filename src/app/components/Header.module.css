@@ -7,6 +7,9 @@
   font-family: Inter;
   font-size: clamp(11px, 1.7vw, 13px);
   text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header p {
