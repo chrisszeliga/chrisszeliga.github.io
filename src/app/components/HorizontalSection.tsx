@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import styles from './HorizontalSection.module.css'
+import styles from './styles/HorizontalSection.module.css'
 
 export default function HorizontalSection() {
   const sectionRef = useRef(null);
@@ -23,7 +23,7 @@ export default function HorizontalSection() {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2727 top",    // value is how much scroll is needed
+          end: "2400 top",    // value is how much scroll is needed
           scrub: 0.6,
           pin: true,
         },
