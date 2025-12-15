@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import styles from './styles/HorizontalSection.module.css'
+import TACard from "./cards/TACard"
 
 export default function HorizontalSection() {
   const sectionRef = useRef(null);
@@ -39,18 +40,20 @@ export default function HorizontalSection() {
     <section className={styles.container}>
       <div ref={triggerRef}>
         <div ref={sectionRef} className={styles.scrollsection}>
-          <div className={styles.card}>
-            <h3>Section 1</h3>
-          </div>
+          <TACard />
+
           <div className={styles.card}>
             <h3>Section 2</h3>
           </div>
+
           <div className={styles.card}>
             <h3>Section 3</h3>
           </div>
+
           <div className={styles.card}>
             <h3>Section 4</h3>
           </div>
+          
         </div>
       </div>
     </section>

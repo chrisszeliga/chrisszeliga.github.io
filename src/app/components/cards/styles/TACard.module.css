@@ -1,0 +1,68 @@
+.container {
+  color: rgb(17, 17, 17);
+  height: 68vh;
+  width: 74vw;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.83vw;
+}
+
+.container p {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: clamp(10.2px, 1.15em, 1.15em);
+}
+
+.container img {
+  margin-top: 3.23vh;
+  height: auto;
+  width: clamp(320px, 39vw, 39vw);
+}
+
+.title-wrapper {
+  font-size: 2.54vw;
+  --font-scale: clamp(40px, 1.52em, 1.52em);
+
+  margin-right: 1.1em;
+  float: left;
+  /* shape-outside: polygon(
+    0 0, 
+    14.3em 0, 
+    14.3em 1.45em,
+    8.4em 1.45em, 
+    8.4em 5.4em,
+    12.6em 5.4em, 
+    12.6em 10.8em,
+    0 10.8em
+  ); */
+  shape-outside: polygon(
+    0 0, 
+    calc(9.49 * var(--font-scale)) 0,
+    calc(9.49 * var(--font-scale)) calc(1 * var(--font-scale)),
+    calc(5.67 * var(--font-scale)) calc(1 * var(--font-scale)),
+    calc(5.67 * var(--font-scale)) calc(2.8 * var(--font-scale)),
+    calc(8.3 * var(--font-scale)) calc(2.8 * var(--font-scale)),
+    calc(8.3 * var(--font-scale)) calc(10 * var(--font-scale)),
+    0 calc(10 * var(--font-scale))
+  );
+}
+
+.title-wrapper h1 {
+  font-size: clamp(40px, 1.52em, 1.52em);
+  text-transform: uppercase;
+  line-height: 0.94;
+}
+
+.title-wrapper h2 {
+  font-size: 1.4em;
+  font-size: clamp(38px, 1.4em, 1.4em);
+  text-transform: uppercase;
+  line-height: 0.94;
+}
+
+.title-wrapper img {
+  margin-top: 0.78em;
+  height: auto;
+  width: clamp(320px, 12.15em, 12.15em);
+}
