@@ -6,26 +6,45 @@
   justify-content: center;
   background-color: rgb(17, 17, 17);
   color: white;
+  overflow: hidden
 }
 
-.container .body {
+.body {
   text-align: center;
   font-size: 3.4vw;
   font-weight: 500;
   font-family: EditorialNew-Regular;
   text-transform: uppercase;
   width: 50%;
+  margin-bottom: 7vh;
   position: relative;
   z-index: 1;
 }
 
-.container .body span {
+.snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.flake {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(1px);
+}
+
+.body span {
   font-family: GreatVibes-Regularbes;
   font-size: 5.5vw;
   font-weight: 500;
   margin-right: 5px;
 }
 
-.container .body .pixel {
+.body .pixel {
   font-family: Mondwest-Regular;
 }
