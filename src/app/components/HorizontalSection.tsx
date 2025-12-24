@@ -4,6 +4,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import styles from './styles/HorizontalSection.module.css'
 import TACard from "./cards/TACard"
+import LBMCard from "./cards/LBMCard"
 
 export default function HorizontalSection() {
   const sectionRef = useRef(null);
@@ -41,14 +42,7 @@ export default function HorizontalSection() {
       <div ref={triggerRef}>
         <div ref={sectionRef} className={styles.scrollsection}>
           <TACard />
-
-          <div className={styles.card}>
-            <h3>Section 2</h3>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Section 3</h3>
-          </div>
+          <LBMCard />
 
           <div className={styles.card}>
             <h3>Section 4</h3>

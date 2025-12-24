@@ -11,6 +11,7 @@
   position: relative;
   background-color: white;
   align-items: center;
+  gap: 3vw;
 }
 
 .card {
