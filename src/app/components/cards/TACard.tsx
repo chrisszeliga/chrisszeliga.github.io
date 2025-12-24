@@ -5,8 +5,8 @@ export default function TACard() {
   return (
     <div className={styles.container}>
       <div className={styles['title-wrapper']}>
-        <h1>UNDERGRADUATE</h1>
-        <h2>TEACHING<br />ASSISTANT</h2>
+        <h1>Undergraduate</h1>
+        <h2>Teaching<br />Assistant</h2>
         <img src="/images/ta-photo.jpeg" alt="TA Photo"></img>
       </div>
       
