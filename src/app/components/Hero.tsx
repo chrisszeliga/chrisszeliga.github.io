@@ -14,26 +14,27 @@ export default function Hero() {
       animations.forEach((anim) => anim.kill())
       animations.length = 0
 
-      const cw = window.innerWidth
-      const ch = window.innerHeight
+      const totalWidth = window.innerWidth
+      const vh = window.innerHeight
+      const totalHeight = vh * 1.07  // vh + 7vh
 
       flakesRef.current.forEach((flake) => {
         if (!flake) return
 
-        const startX = gsap.utils.random(35, cw - 35) // Keep away from edges
-        const drift = gsap.utils.random(-25, 25)      // Drift
+        const startX = gsap.utils.random(45, totalWidth - 45) // Keep away from edges
+        const drift = gsap.utils.random(-20, 20)      // Drift
 
         const tween = gsap.fromTo(
           flake,
           {
             x: startX,
-            y: gsap.utils.random(-ch, -50), // Stagger initial Y positions
+            y: gsap.utils.random(-totalHeight, -50), // Stagger initial Y positions
             scale: gsap.utils.random(0.3, 1),
             opacity: gsap.utils.random(0.3, 1),
             rotation: gsap.utils.random(0, 360)
           },
           {
-            y: ch + 50,
+            y: totalHeight + 50,
             x: startX + drift, // Absolute position to prevent overflow
             rotation: `+=${gsap.utils.random(180, 360)}`,
             duration: gsap.utils.random(8, 15),
