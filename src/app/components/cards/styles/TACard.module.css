@@ -15,9 +15,9 @@
 }
 
 .container img {
-  margin-top: 3.23vh;
+  margin-top: 2.35vh;
   height: auto;
-  width: clamp(320px, 39vw, 39vw);
+  width: clamp(320px, 40vw, 40vw);
 }
 
 .title-wrapper {
