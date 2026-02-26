@@ -77,9 +77,10 @@ export default function Hero() {
 
       <div className={styles.body}>
         <p>
-          <span>C</span>hristopher <span>S</span>zeliga
+          <span className={styles.initial}>C</span>hristopher <span className={styles.initial}>S</span>zeliga
         </p>
-        <p>Software Engineer</p>
+        <p>Incoming Back End</p>
+        <p>Developer @ <span className={styles.ibm}>IBM</span></p>
       </div>
     </section>
   )

@@ -33,3 +33,9 @@
   font-family: 'NeueMontreal';
   src: url('/fonts/NeueMontreal_Medium.otf') format("opentype");
 }
+
+/* IBM Logo */
+@font-face {
+  font-family: "IBM-logo";
+  src: url("/fonts/IBM-logo.ttf") format("truetype");
+}

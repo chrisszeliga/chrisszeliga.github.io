@@ -11,11 +11,11 @@
 
 .body {
   text-align: center;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: 500;
   font-family: EditorialNew-Regular;
   text-transform: uppercase;
-  width: 50%;
+  width: 60%;
   margin-bottom: 7vh;
   position: relative;
   z-index: 1;
@@ -38,11 +38,19 @@
   filter: blur(1px);
 }
 
-.body span {
+.body .initial {
   font-family: GreatVibes-Regularbes;
-  font-size: 5.5vw;
-  font-weight: 500;
-  margin-right: 5px;
+  font-size: 5.7vw;
+  margin-right: 0.3vw;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.body .ibm {
+  font-family: IBM-logo;
+  color: rgb(5, 48, 173);
+  position: relative;
+  top: 0.05em;
 }
 
 .body .pixel {
