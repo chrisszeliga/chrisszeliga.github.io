@@ -1,18 +1,72 @@
 .container {
   color: rgb(17, 17, 17);
-  background-color: pink;
   height: 68vh;
   width: 61vw;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   font-size: 0.83vw;
 }
 
-.container video {
-  width: 68vh;
+.left {
+  width: 34%;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
   transform: rotate(-90deg);
-  max-width: 100%; /* Prevent video from exceeding container */
-  max-height: 100%; /* Prevent video from exceeding container */
+  width: 68vh;
+  max-width: none;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 3.19vw;
+  font-weight: 900;
+  margin: 0 0 0.5vh 0;
+  line-height: 0.95;
+}
+
+.subtitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: -1vh;
+  margin-bottom: 1vh;
+}
+
+.subtitle {
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.87;
+  margin: 0;
+}
+
+.speedup {
+  font-size: 3.19vw;
+  font-weight: 900;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.9vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.image {
+  width: 70%;
+  margin-top: 1vh;
+  object-fit: contain;
 }

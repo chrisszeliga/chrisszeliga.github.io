@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -7,10 +7,10 @@ import TACard from "./cards/TACard"
 import LBMCard from "./cards/LBMCard"
 
 export default function HorizontalSection() {
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
+  const sectionRef = useRef(null)
+  const triggerRef = useRef(null)
 
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
     const pin = gsap.fromTo(
@@ -30,12 +30,12 @@ export default function HorizontalSection() {
           pin: true,
         },
       }
-    );
+    )
     // A return function for killing the animation on component unmount
     return () => {
-      pin.kill();
-    };
-  }, []);
+      pin.kill()
+    }
+  }, [])
 
   return (
     <section className={styles.container}>
