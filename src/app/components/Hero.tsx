@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import styles from './styles/Hero.module.css'
+import Header from './Header'
 
 export default function Hero() {
   const flakesRef = useRef<HTMLDivElement[]>([])
@@ -62,26 +63,30 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className={styles.container}>
-      <div className={styles.snow}>
-        {Array.from({ length: 150 }).map((_, i) => (
-          <div
-            key={i}
-            className={styles.flake}
-            ref={(el) => {
-              if (el) flakesRef.current[i] = el
-            }}
-          />
-        ))}
-      </div>
+    <div className={styles.container}>
+      <Header />
+      <section className={styles.hero}>
+        <div className={styles.snow}>
+          {Array.from({ length: 150 }).map((_, i) => (
+            <div
+              key={i}
+              className={styles.flake}
+              ref={(el) => {
+                if (el) flakesRef.current[i] = el
+              }}
+            />
+          ))}
+        </div>
 
-      <div className={styles.body}>
-        <p>
-          <span className={styles.initial}>C</span>hristopher <span className={styles.initial}>S</span>zeliga
-        </p>
-        <p>Incoming Back End</p>
-        <p>Developer @ <span className={styles.ibm}>IBM</span></p>
-      </div>
-    </section>
+        <div className={styles.body}>
+          <p>
+            <span className={styles.initial}>C</span>HRISTOPHER <span className={styles.initial}>S</span>ZELIGA
+          </p>
+          <p>BACKEND SOFTWARE</p>
+          <p>ENGINEER @ <img src="/images/ibm-logo.png" alt="IBM" className={styles.ibmLogo} /></p>
+          <p>z/OS DEEP LEARNING COMPILER</p>
+        </div>
+      </section>
+    </div>
   )
 }

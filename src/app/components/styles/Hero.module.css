@@ -1,4 +1,8 @@
 .container {
+  background-color: rgb(17, 17, 17);
+}
+
+.hero {
   display: flex;
   height: 107vh;
   padding-bottom: 7vh;
@@ -6,15 +10,14 @@
   justify-content: center;
   background-color: rgb(17, 17, 17);
   color: white;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .body {
   text-align: center;
-  font-size: 3.7vw;
+  font-size: 3.3vw;
   font-weight: 500;
   font-family: EditorialNew-Regular;
-  text-transform: uppercase;
   width: 60%;
   margin-bottom: 7vh;
   position: relative;
@@ -48,6 +51,7 @@
 
 .body .ibm {
   font-family: IBM-logo;
+  letter-spacing: -0.1em;
   color: rgb(5, 48, 173);
   position: relative;
   top: 0.05em;
@@ -55,4 +59,10 @@
 
 .body .pixel {
   font-family: Mondwest-Regular;
+}
+
+.ibmLogo {
+  height: 0.9em;
+  margin-bottom: 0.3em;
+  vertical-align: middle;
 }
