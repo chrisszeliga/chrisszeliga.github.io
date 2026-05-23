@@ -26,7 +26,7 @@ export default function HorizontalSection() {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2400 top",    // value is how much scroll is needed
+          end: "1800 top",    // value is how much scroll is needed
           scrub: 0.6,
           pin: true,
         },
