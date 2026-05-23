@@ -44,7 +44,7 @@ export default function HorizontalSection() {
         <div ref={sectionRef} className={styles.scrollsection}>
           <TACard />
           <LBMCard />
-          <YALLMCard />      
+          <YALLMCard />
         </div>
       </div>
     </section>

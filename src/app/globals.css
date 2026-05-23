@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* fancy italics */
 @font-face {
   font-family: "GreatVibes-Regularbes";

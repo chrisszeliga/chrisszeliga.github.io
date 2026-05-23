@@ -1,6 +1,7 @@
 'use client'
 import Hero from './components/Hero'
 import HorizontalScroll from './components/HorizontalSection'
+import Footer from "./components/Footer"
 import { useEffect } from 'react'
 import Lenis from 'lenis'
 
@@ -18,6 +19,7 @@ export default function Home() {
     <main>
       <Hero />
       <HorizontalScroll />
+      <Footer />
     </main>
   )
 }
