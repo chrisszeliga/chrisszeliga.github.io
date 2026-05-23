@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import styles from './styles/HorizontalSection.module.css'
 import TACard from "./cards/TACard"
 import LBMCard from "./cards/LBMCard"
+import YALLMCard from "./cards/YALLMCard"
 
 export default function HorizontalSection() {
   const sectionRef = useRef(null)
@@ -19,7 +20,7 @@ export default function HorizontalSection() {
         translateX: 0,
       },
       {
-        translateX: "-180vw", // current vw - total vw ==> 100 vw - (four 70vw sections)
+        translateX: "-112vw", // current vw - total vw ==> 100vw - (three 70vw sections) + 2vw extra
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -43,11 +44,7 @@ export default function HorizontalSection() {
         <div ref={sectionRef} className={styles.scrollsection}>
           <TACard />
           <LBMCard />
-
-          <div className={styles.card}>
-            <h3>Section 4</h3>
-          </div>
-          
+          <YALLMCard />      
         </div>
       </div>
     </section>
