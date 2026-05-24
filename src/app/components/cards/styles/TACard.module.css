@@ -10,7 +10,7 @@
 
 .container p {
   margin-top: 2em;
-  font-weight: bold;
+  font-weight: normal;
   font-size: clamp(10.2px, 1.15em, 1.15em);
 }
 

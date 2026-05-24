@@ -61,7 +61,7 @@
 
 .description {
   font-size: 0.9vw;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   column-count: 2;
   column-gap: 0.5vw;
