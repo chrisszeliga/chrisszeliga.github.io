@@ -67,7 +67,7 @@ export default function Hero() {
       <Header />
       <section className={styles.hero}>
         <div className={styles.snow}>
-          {Array.from({ length: 100 }).map((_, i) => (
+          {Array.from({ length: 80 }).map((_, i) => (
             <div
               key={i}
               className={styles.flake}

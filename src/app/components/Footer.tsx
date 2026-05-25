@@ -67,7 +67,7 @@ export default function Footer() {
         <div className={styles.sticky}>
           <div ref={containerRef} className={styles.container}>
             <div className={styles.snow}>
-              {Array.from({ length: 50 }).map((_, i) => (
+              {Array.from({ length: 40 }).map((_, i) => (
                 <div
                   key={i}
                   className={styles.flake}
