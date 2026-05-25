@@ -43,7 +43,7 @@ export default function Footer() {
             duration: gsap.utils.random(8, 15),
             repeat: -1,
             ease: 'none',
-            repeatRefresh: true,
+            repeatRefresh: false,
           }
         )
 
@@ -67,7 +67,7 @@ export default function Footer() {
         <div className={styles.sticky}>
           <div ref={containerRef} className={styles.container}>
             <div className={styles.snow}>
-              {Array.from({ length: 75 }).map((_, i) => (
+              {Array.from({ length: 50 }).map((_, i) => (
                 <div
                   key={i}
                   className={styles.flake}

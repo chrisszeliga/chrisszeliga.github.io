@@ -41,7 +41,7 @@ export default function Hero() {
             duration: gsap.utils.random(8, 15),
             repeat: -1,
             ease: 'none',
-            repeatRefresh: true
+            repeatRefresh: false
           }
         )
         animations.push(tween)
@@ -67,7 +67,7 @@ export default function Hero() {
       <Header />
       <section className={styles.hero}>
         <div className={styles.snow}>
-          {Array.from({ length: 150 }).map((_, i) => (
+          {Array.from({ length: 100 }).map((_, i) => (
             <div
               key={i}
               className={styles.flake}

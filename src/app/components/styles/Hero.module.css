@@ -39,6 +39,8 @@
   border-radius: 50%;
   opacity: 0.8;
   filter: blur(1px);
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .body .initial {
