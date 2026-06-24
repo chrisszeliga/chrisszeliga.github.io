@@ -84,7 +84,7 @@ export default function Hero() {
           </p>
           <p>BACKEND SOFTWARE</p>
           <p>ENGINEER @ <img src="/images/IBM-logo.png" alt="IBM" className={styles.ibmLogo} /></p>
-          <p>z/OS DEEP LEARNING COMPILER</p>
+          <p>Z DEEP LEARNING COMPILER</p>
         </div>
       </section>
     </div>
