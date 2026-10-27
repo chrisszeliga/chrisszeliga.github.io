@@ -83,7 +83,7 @@ export default function Hero() {
             <span className={styles.initial}>C</span>HRISTOPHER <span className={styles.initial}>S</span>ZELIGA
           </p>
           <p>BACKEND SOFTWARE</p>
-          <p>ENGINEER @ <img src="/images/IBM-logo.png" alt="IBM" className={styles.ibmLogo} /></p>
+          <p>ENGINEER AT <img src="/images/IBM-logo.png" alt="IBM" className={styles.ibmLogo} /></p>
           <p>Z DEEP LEARNING COMPILER</p>
         </div>
       </section>
